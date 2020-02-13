@@ -56,15 +56,55 @@
 		76A7E4F523F53F3800A5CC5D /* JexMobile */ = {
 			isa = PBXGroup;
 			children = (
-				76A7E4F623F53F3800A5CC5D /* AppDelegate.swift */,
-				76A7E4F823F53F3800A5CC5D /* SceneDelegate.swift */,
-				76A7E4FA23F53F3800A5CC5D /* ViewController.swift */,
-				76A7E4FC23F53F3800A5CC5D /* Main.storyboard */,
-				76A7E4FF23F53F3B00A5CC5D /* Assets.xcassets */,
-				76A7E50123F53F3B00A5CC5D /* LaunchScreen.storyboard */,
-				76A7E50423F53F3B00A5CC5D /* Info.plist */,
+				76A7E50B23F53F5500A5CC5D /* Resource */,
+				76A7E50A23F53F4900A5CC5D /* AppDelegate */,
+				76A7E50D23F53F6F00A5CC5D /* Application */,
 			);
 			path = JexMobile;
+			sourceTree = "<group>";
+		};
+		76A7E50A23F53F4900A5CC5D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				76A7E4F623F53F3800A5CC5D /* AppDelegate.swift */,
+				76A7E4F823F53F3800A5CC5D /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		76A7E50B23F53F5500A5CC5D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				76A7E4FF23F53F3B00A5CC5D /* Assets.xcassets */,
+				76A7E50423F53F3B00A5CC5D /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		76A7E50C23F53F6700A5CC5D /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				76A7E50123F53F3B00A5CC5D /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		76A7E50D23F53F6F00A5CC5D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				76A7E50C23F53F6700A5CC5D /* Launch */,
+				76A7E50E23F53F7400A5CC5D /* Main */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		76A7E50E23F53F7400A5CC5D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				76A7E4FA23F53F3800A5CC5D /* ViewController.swift */,
+				76A7E4FC23F53F3800A5CC5D /* Main.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,7 +326,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 994BWAVX9G;
-				INFOPLIST_FILE = JexMobile/Info.plist;
+				INFOPLIST_FILE = JexMobile/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +335,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Moonift.JexMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +345,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 994BWAVX9G;
-				INFOPLIST_FILE = JexMobile/Info.plist;
+				INFOPLIST_FILE = JexMobile/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +354,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Moonift.JexMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
